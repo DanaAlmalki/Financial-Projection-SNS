@@ -19,7 +19,6 @@ const FinancialSearch = ({ ticker, setTicker }) => {
         <h1>Welcome to Fin!</h1>
         <p>How would you like to see the data?</p>
       </div>
-
       <div className="radio-buttons">
         <span>
           <input

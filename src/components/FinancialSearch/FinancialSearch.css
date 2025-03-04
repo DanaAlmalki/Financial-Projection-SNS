@@ -5,7 +5,6 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  row-gap: 1rem;
   box-sizing: border-box;
 }
 
@@ -16,9 +15,11 @@
   letter-spacing: -1px;
 }
 
-.container p {
+.container .welcome-msg p {
   color: var(--silver);
   font-size: 1.5rem;
+  margin: 2rem 0 0 0;
+  justify-self: flex-end;
 }
 
 .container .welcome-msg {
@@ -31,6 +32,11 @@
   width: 100%;
   text-align: center;
   box-sizing: border-box;
+}
+
+.search-container button {
+  padding: 1rem 4rem;
+  margin-bottom: -1rem;
 }
 
 .background {
@@ -110,6 +116,10 @@ option {
 
 .radio-buttons input:checked {
   border: 6px solid var(--coral);
+}
+
+.radio-buttons input:hover:not(:checked) {
+  border: 6px solid var(--silver);
 }
 
 .radio-buttons > * {
