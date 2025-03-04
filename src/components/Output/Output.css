@@ -86,7 +86,7 @@
 }
 
 .img-grid span p {
+  width: 100%;
   font-weight: bold;
-  padding: 0 1rem;
-  align-self: center;
+  text-align: center;
 }
