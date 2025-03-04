@@ -1,10 +1,10 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 
-import image from "../assets/google.webp";
-import sales from "../assets/sales.png";
-import insights from "../assets/insights.png";
-import customers from "../assets/customers.png";
+import image from "../../assets/google.webp";
+import sales from "../../assets/sales.png";
+import insights from "../../assets/insights.png";
+import customers from "../../assets/customers.png";
 
 import "./Output.css";
 
@@ -47,7 +47,7 @@ export default function Output({ ticker }) {
   ];
 
   return (
-    <div>
+    <div className="output-parent">
       {companies.map(
         (company) =>
           company.ticker === ticker && (
@@ -61,9 +61,18 @@ export default function Output({ ticker }) {
               </div>
               <h2>Data visualization</h2>
               <div className="img-grid">
-                <img src={sales} />
-                <img src={insights} />
-                <img src={customers} />
+                <span>
+                  <img src={sales} />
+                  <p>Lorem ipsum dolor</p>
+                </span>
+                <span>
+                  <img src={insights} />
+                  <p>Lorem ipsum dolor</p>
+                </span>
+                <span>
+                  <img src={customers} />
+                  <p>Lorem ipsum dolor</p>
+                </span>
               </div>
             </div>
           )

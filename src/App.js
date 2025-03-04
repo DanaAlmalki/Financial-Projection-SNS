@@ -1,9 +1,10 @@
 import React, { useState } from "react";
 import { Routes, Route } from "react-router-dom";
 
-import FinancialSearch from "./components/FinancialSearch";
 import "./App.css";
-import Output from "./components/Output";
+import logo from "./assets/STC_logo.png";
+import FinancialSearch from "./components/FinancialSearch/FinancialSearch.js";
+import Output from "./components/Output/Output.js";
 
 function App() {
   const [ticker, setTicker] = useState("");
@@ -11,6 +12,7 @@ function App() {
 
   return (
     <div className="main-content">
+      <img src={logo} />
       <Routes>
         <Route
           path="/"

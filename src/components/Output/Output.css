@@ -1,0 +1,92 @@
+.output-parent {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.output-container {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+
+  width: 60%;
+  min-width: 400px;
+  background: var(--purple);
+  padding: 2rem 3rem;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: start;
+}
+
+.logo {
+  box-sizing: border-box;
+  width: 200px;
+  margin: 1rem 0;
+  border-radius: 10px;
+}
+
+.about-company {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  column-gap: 2rem;
+
+  margin: auto;
+  min-height: min-content;
+}
+
+.output-container h1 {
+  color: rgb(255, 255, 255);
+  margin-bottom: 1.4rem;
+  font-size: 2.5rem;
+}
+
+.output-container h2 {
+  color: rgb(227, 227, 227);
+  margin-bottom: 1rem;
+  font-size: 2rem;
+}
+
+.header p {
+  font-size: 1.5rem;
+  padding: 0;
+  filter: brightness(0.9);
+}
+
+.output-parent button {
+  align-self: center;
+  width: 40%;
+  min-width: 400px;
+  margin-bottom: 4rem;
+}
+
+.img-grid {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  row-gap: 1rem;
+}
+
+.img-grid span {
+  font-size: 1.5rem;
+  width: 200px;
+}
+
+.img-grid img {
+  width: 100%;
+}
+
+.img-grid span p {
+  font-weight: bold;
+  padding: 0 1rem;
+  align-self: center;
+}
